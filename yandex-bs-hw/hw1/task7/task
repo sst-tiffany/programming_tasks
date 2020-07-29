@@ -1,0 +1,14 @@
+Задание 7.
+Инкремент/декремент в Python
+Замени pass, чтобы код работал
+
+class Magic:
+    pass
+
+i = Magic()
+assert i == 0
+assert ++i == 1
+assert ++i == 2
+assert --i == 1
+assert --i == 0
+assert --i == -1

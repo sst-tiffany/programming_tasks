@@ -1,0 +1,14 @@
+Задание 10.
+Декораторы, context manager, генераторы
+Написать аналог contextlib.contextmanager.
+@my_own_context_manager_decorator
+def example_context_manager_func(arg1, arg2):
+	try:
+		print(f'enter {arg1} {arg2}')
+		mananged_resource_result = arg1 + arg2
+		yield mananged_resource_result
+	finally:
+		print('exit')
+
+with example_context_manager_func('arg1', 'arg2') as managed_resource:
+	print(managed_resource)
